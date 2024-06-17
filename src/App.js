@@ -42,8 +42,10 @@ const App = () => {
                 })}
             </div>
 
+            <hr />
+
             <div className='container'>
-                <h2 style={{textAlign: 'center', marginTop: '50px'}}>Полезные статьи:</h2>
+                <h2>Полезные статьи:</h2>
                 {news.map((item, idx) => {
                     return (
                         <div key={idx}>
