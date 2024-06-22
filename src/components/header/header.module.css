@@ -6,20 +6,43 @@
 .header div, nav{
     display: flex;
 }
-nav{
+.header nav{
     gap: 40px;
-    margin-right: 55px;
 }
 .header div{
     gap: 10px;
     align-items: center;
 }
-nav a{
+.header a{
     text-decoration: none;
     color: #000;
     font-weight: 600;
+    font-size: 16px;
 }
-.title{
-    width: 151.4px;
-    height: 14.4px;
+.header a:hover{
+    text-decoration: underline;
+}
+.logos{
+    display: flex;
+    align-items: center;
+}
+.menu, .logowhite{
+    display: none;
+}
+@media screen and (max-width: 390px) {
+    nav, .web, .logoblack{
+        display: none;
+    }
+    .menu, .logowhite{
+        display: inline-block;
+    }
+    header{
+        padding: 0;
+    }
+    .logos div{
+        display: flex;
+        gap: 5px;
+        position: relative;
+        right: 20px;
+    }
 }

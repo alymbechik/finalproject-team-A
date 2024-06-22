@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './style.module.css'
+import { motion } from 'framer-motion';
 
 const Advantages = (props) => {
 
@@ -9,14 +10,20 @@ const Advantages = (props) => {
     } = props
 
     return (
-        <div className={styles.advantages}>
+        <motion.div className={styles.advantages}
+        initial={{ opacity: 0, x: -150}}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        animate={{ x: 0}}
+        transition={{ duration: 2 }}
+        >
             <div className={styles.circle}>
                 <img src={icon} alt=""/>
             </div>
             <h3 className={styles.title}>
                 {title}
             </h3>
-        </div>
+        </motion.div>
     );
 };
 

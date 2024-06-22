@@ -1,0 +1,44 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+.footer nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+@media screen and (max-width: 390px) {
+    .footer{
+        align-items: center;
+    }
+    .footer nav{
+        gap: 10px;
+    }
+    .phone{
+        display: none;
+    }
+    a img{
+        width: 20px;
+        height: 20px;
+    }
+    .title{
+        width: 100px;
+        height: 9.51px;
+    }
+    .footer a{
+        font-size: 8px;
+    }
+}

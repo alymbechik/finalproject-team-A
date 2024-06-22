@@ -1,0 +1,114 @@
+.card{
+    display: flex;
+    background: #F1F1F1;
+    border-radius: 50px;
+    width: 90%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px 0 40px;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text h2{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.card h3, .loc a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 30px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.loc{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bookforphones, .btns img, .btns a{
+    display: none;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+}
+.info button{
+    width: Hug (131px)px;
+    height: Hug (50px)px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #11AE04;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+@media screen and (max-width: 390px) {
+    .book, .info button, .input{
+        display: none;
+    }
+    .bookforphones, .btns img, .btns a{
+        display: inline-block;
+    }
+    .bookforphones{
+        position: relative;
+        top: 13px;
+        left: 13px;
+    }
+    .text h2{
+        font-size: 12px;
+    }
+    .text h3, .info a{
+        font-size: 10px;
+        line-height: 11px;
+        color: #000000;
+    }
+    .text{
+        gap: 8px;
+    }
+    .content{
+        gap: 4px;
+    }
+    .card{
+        padding: 15px 10px 5px 5px;
+        gap: 0;
+        border-radius: 20px;
+        background: #CCD5AE;
+        width: 92%;
+        height: auto;
+    }
+    .btns, .loc{
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    }
+    .loc img{
+        width: 15px;
+        height: 15px;
+    }
+    .info{
+        position: relative;
+        right: 6%;
+        text-wrap: nowrap;
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 360px){
+    .info{
+        text-wrap: wrap;
+    }
+}

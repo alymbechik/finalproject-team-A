@@ -1,0 +1,58 @@
+.info p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: grey;
+}
+.title h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.title h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media screen and (max-width: 390px){
+    .title{
+        gap: 0;
+    }
+    .title h1{
+        font-size: 15px;
+    }
+    .title h4{
+        font-size: 9px;
+        text-wrap: nowrap;
+    }
+    .info p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .about img{
+        width: 170.84px;
+        height: 208.53px;
+    }
+    .about, .info, .title{
+        gap: 10px;
+    }
+    .about{
+        align-items: normal;
+    }
+    .info{
+        gap: 5px;
+    }
+}

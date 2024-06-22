@@ -17,8 +17,28 @@
     justify-content: center;
     align-items: center;
 }
-
 .title {
     font-size: 22px;
     text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+}
+@media screen and (max-width: 390px) {
+    .circle{
+        width: 70.87px;
+        height: 71.72px;
+        background: #F0EAD2;
+        box-shadow: 0px 1px 10px 1px #00000040;
+    }
+    .circle img{
+        width: 50px;
+    }
+    .title{
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .advantages{
+        width: 73px;
+        height: 104px;
+    }
 }
