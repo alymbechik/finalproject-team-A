@@ -1,7 +1,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    gap: 126px;
+    gap: 96px;
 }
 .up{
     display: flex;
@@ -10,14 +10,12 @@
     justify-content: space-between;
 }
 .up h1 {
-    font-size: 50px;
+    font-size: 48px;
     width: 65%;
 }
 .car{
     position: absolute;
-    width: 530.41px;
-    height: 301.76px;
-    top: 170px;
+    top: 180px;
     left: 48%;
 }
 .text_btns{
@@ -56,6 +54,9 @@
     color: #F1F1F1;
     font-size: 15px;
     cursor: pointer;
+}
+.btns button:hover{
+    background: #6f944e;
 }
 .btns a{
     text-decoration: none;

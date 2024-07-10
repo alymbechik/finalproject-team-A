@@ -11,7 +11,8 @@ import { motion } from 'framer-motion'
 
 const Main = () => {
   return (
-    <div className={styles.main}>
+    <main>
+        <div className={styles.main}>
         <div className={styles.up}
         // initial={{ opacity: 0, x: -150}}
         // animate={{ opacity: 1, x: 0}}
@@ -74,6 +75,8 @@ const Main = () => {
             </div>
         </div>
     </div>
+    </main>
+    
   )
 }
 

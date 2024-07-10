@@ -13,11 +13,29 @@ import traffic from './assets/icons/image 24.svg'
 import road from './assets/icons/image 24 (1).svg'
 import Footer from './components/footer/Footer';
 import CircularIndeterminate from './components/Loading/loading';
+import Advantage from './modules/advantage/advantage';
+import States from './modules/states/states';
+import Road from './modules/road/road';
+import Header_Main from './modules/headermain/headermain';
 
 const App = () => {
 
     const [news, setNews] = useState([])
     const [Loading, setLoading] = useState(false)
+    const [bookName, setBookName] = useState('');
+
+    const handleInputChange = (event) => {
+    setBookName(event.target.value);
+    }
+
+    const postBook = async () => {
+        try {
+            const response = await axios.post('https://codify-graduation-project.vercel.app/send-message', { message: bookName });
+            console.log('Response:', response.data);
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
 
     async function getNews () {
         setLoading(true)
@@ -42,69 +60,28 @@ const App = () => {
     }, []);
 
     return (
-        Loading?
+        <div className='App'>
+        {Loading?
             <CircularIndeterminate/>
             :
-        <div className='App'>
-            <section className='main'>
-                <header>
-                    <Header/>
-                </header>
-                <main>
-                    <Main/>
-                </main>
-            </section>
-            <aside className='flex'>
-                {ADVANTAGES_DATA.map((item, idx) => {
-                    return (
-                        <div key={idx}>
-                            <Advantages
-                                icon={item.icon}
-                                title={item.title}
-                            />
-                        </div>
-                    )
-                })}
-            </aside>
+            <div className='App'>
+                <Header_Main/>
+                <Advantage/>
+                <hr />
+                <About/>
+                <Method
+                bookName={bookName}
+                handleInputChange={handleInputChange}
+                postBook={postBook}
+                />
+                <States news={news}/>
+                <div>
+                    <Road/>
+                    <Footer/>
+                </div>
 
-            <hr />
-            <article className='about' id='about'>
-            <About/>
-            </article>
-            <section className='method' id='method'>
-                <Method />
-            </section>
-            <article className='container' id='states'>
-                <h2>Полезные статьи:</h2>
-                {news.map((item, idx) => {
-                    return (
-                        <div key={idx}>
-                            <News
-                                image={item.image}
-                                text={item.text}
-                            />
-                        </div>
-                    )
-                })}
-            </article>
-            <div>
-            <section className='road' id='test'>
-                <div className='text'>
-                    <h2>Жакшы жол</h2>
-                    <p>Научитесь водить правильно и безопасно вместе с опытным 
-                        инструктором по вождению </p>
-                        <img src={traffic} alt='Светофор' className='traffic'/>
-                </div>
-                <img src={road} alt='Road' className='roadimg'/>
-                <div className='cards'>
-                <Card/>
-                <Card2/>
-                </div>
-            </section>
-            <footer>
-                <Footer/>
-            </footer>
             </div>
+            }
         </div>
     );
 };

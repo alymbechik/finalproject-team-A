@@ -8,24 +8,17 @@ import axios from 'axios';
 import { TextField } from '@mui/material';
 import { motion } from 'framer-motion';
 
-const Method = () => {
-  const [bookName, setBookName] = useState('');
+const Method = (props) => {
 
-  const handleInputChange = (event) => {
-    setBookName(event.target.value);
-  }
-
-  const postBook = async () => {
-    try {
-      const response = await axios.post('https://codify-graduation-project.vercel.app/send-message', { message: bookName });
-      console.log('Response:', response.data);
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  }
+  const {
+    bookName,
+    handleInputChange,
+    postBook
+  } = props
 
   return (
-    <div className={styles.card}>
+    <section className={styles.method} id='method'>
+      <div className={styles.card}>
         <img src={book} alt="" className={styles.book} />
         <img src={bookforphones} alt="" className={styles.bookforphones} />
         <div className={styles.content}>
@@ -68,6 +61,7 @@ const Method = () => {
           </div>
         </div>
     </div>
+    </section>
   )
 }
 

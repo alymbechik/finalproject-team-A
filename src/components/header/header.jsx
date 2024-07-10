@@ -9,7 +9,8 @@ import logo2 from '../../assets/icons/Logo (3).svg'
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <header>
+      <div className={styles.header}>
       <div className={styles.logos}>
         <div>
             <img src={logo} alt="" className={styles.logoblack} />
@@ -31,6 +32,8 @@ const Header = () => {
         <img src={menu} alt="" className={styles.menu} />
         </div>
     </div>
+    </header>
+    
   )
 }
 

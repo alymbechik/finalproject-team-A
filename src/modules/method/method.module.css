@@ -1,3 +1,9 @@
+.method{
+    background: #478E64;
+    box-shadow: 0px 10px 20px 0px #00000040;
+    padding: 8% 0;
+    height: 100%;
+}
 .card{
     display: flex;
     background: #F1F1F1;
@@ -6,7 +12,7 @@
     gap: 50px;
     justify-content: center;
     align-items: center;
-    padding: 30px 50px 0 40px;
+    padding: 30px 30px 0 40px;
     margin: 0 auto;
 }
 .content{
@@ -29,6 +35,9 @@
     font-weight: 500;
     color: #000000;
     line-height: 30px;
+}
+.loc a:hover{
+    text-decoration: underline dashed;
 }
 .info{
     display: flex;

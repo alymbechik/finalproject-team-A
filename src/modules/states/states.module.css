@@ -1,0 +1,17 @@
+.states {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.states h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+@media screen and (max-width: 390px){
+    .states h2{
+        font-size: 21px;
+        font-weight: 700;
+    }
+}

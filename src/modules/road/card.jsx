@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './road.module.css'
+import styles from './cards.module.css'
 import logo from '../../assets/icons/Social media.svg'
 import img from '../../assets/icons/Group 33.svg'
 import { motion } from 'framer-motion'

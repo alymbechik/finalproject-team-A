@@ -1,112 +1,75 @@
-.card{
-    background: #40805A;
-    width: 90%;
-    height: 348px;
-    border-radius: 50px;
-    margin: 0 auto;
+.road{
+    background: #478E64;
     display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 100px 0;
     justify-content: center;
-    padding: 50px 110px 60px 50px;
-    align-items: center;
-    gap: 10px;
-}
-.content{
+  }
+  .cards{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 280px;
-}
-.content button{
-    width: 158px;
-    height: 45px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 50px;
-    border: none;
-    font-size: 15px;
-    font-weight: 500;
-    margin: 0 auto;
-    background: #FFFFFF;
-}
-.content, .whatsapp a{
-    color: white;
-    text-decoration: none;
-}
-.content h2{
+    gap: 100px;
+  }
+  .text{
     text-align: center;
-    font-size: 30px;
-    font-weight: 400;
-    z-index: 2;
-}
-.content p, .whatsapp a{
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 26.63px;
-}
-.text{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.info{
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.whatsapp{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.button{
-    display: none;
-}
+  }
+  .text h2{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .text p{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .traffic{
+    width: 111.39px;
+    height: 208.49px;
+    position: absolute;
+    top: 3585px;
+    left: 172px;
+  }
+  .roadimg{
+    position: absolute;
+    top: 4110px;
+    right: 0;
+  }
 @media screen and (max-width: 390px) {
-    .card{
-        flex-direction: column-reverse;
-        height: auto;
-        height: 348px;
-        padding: 10px 25px 0px 30px;
-        gap: 20px;
+    .text h2{
+        font-size: 21px;
+        font-weight: 700;
     }
-    .card button, .content button{
-        cursor: pointer;
-    }
-    .info{
-        flex-direction: row;
-        gap: 0;
-    }
-    .content{
-        height: auto;
-        gap: 40px;
-    }
-    .content h2, .content p, .whatsapp a{
+    .text p{
         font-size: 12px;
-        font-weight: 400;
-        line-height: 14.52px;
-    }
-    .img{
-        width: 121.72px;
-        height: 90.19px;
+        font-weight: 600;
+        line-height: 20px;
+        width: 90%;
         z-index: 2;
     }
-    .content button{
-        display: none;
+    .road{
+        padding: 30px 0;
+        gap: 30px;
     }
-    .whatsapp img{
-        width: 15px;
-        height: 15px;
+    .cards{
+        gap: 20px;
     }
-    .text{
-        gap: 10px;
+    .traffic{
+        width: 48.63px;
+        height: 91.03px;
+        top: 2008px;
+        left: 52.45px;
     }
-    .button{
-        display: block;
-        width: 138px;
-        height: 45px;
-        padding: 10px 30px 10px 30px;
-        border-radius: 50px;
-        border: none;
-        background: white;
-        font-size: 12px;
+    .roadimg{
+        width: 190.26px;
+        height: 175.29px;
+        top: 2670px;
+        left: 199.74px;
     }
 }

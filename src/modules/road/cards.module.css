@@ -1,0 +1,113 @@
+.card{
+    background: #40805A;
+    width: 90%;
+    height: 348px;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 50px 110px 60px 50px;
+    align-items: center;
+    gap: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+}
+.content button{
+    width: 158px;
+    height: 45px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 auto;
+    background: #FFFFFF;
+    z-index: 1;
+}
+.content, .whatsapp a{
+    color: white;
+    text-decoration: none;
+}
+.content h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    z-index: 2;
+}
+.content p, .whatsapp a{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.63px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.whatsapp{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.button{
+    display: none;
+}
+@media screen and (max-width: 390px) {
+    .card{
+        flex-direction: column-reverse;
+        height: auto;
+        height: 348px;
+        padding: 10px 25px 0px 30px;
+        gap: 20px;
+    }
+    .card button, .content button{
+        cursor: pointer;
+    }
+    .info{
+        flex-direction: row;
+        gap: 0;
+    }
+    .content{
+        height: auto;
+        gap: 40px;
+    }
+    .content h2, .content p, .whatsapp a{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.52px;
+    }
+    .img{
+        width: 121.72px;
+        height: 90.19px;
+        z-index: 2;
+    }
+    .content button{
+        display: none;
+    }
+    .whatsapp img{
+        width: 15px;
+        height: 15px;
+    }
+    .text{
+        gap: 10px;
+    }
+    .button{
+        display: block;
+        width: 138px;
+        height: 45px;
+        padding: 10px 30px 10px 30px;
+        border-radius: 50px;
+        border: none;
+        background: white;
+        font-size: 12px;
+    }
+}

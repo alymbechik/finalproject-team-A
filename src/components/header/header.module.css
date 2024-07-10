@@ -8,6 +8,7 @@
 }
 .header nav{
     gap: 40px;
+    margin-right: 50px;
 }
 .header div{
     gap: 10px;

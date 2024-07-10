@@ -5,7 +5,8 @@ import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <motion.div className={styles.about}
+    <article className={styles.about} id='about'>
+    <motion.div className={styles.container}
     initial={{ opacity: 0, x: -150}}
     whileInView={{ opacity: 1 }}
     viewport={{ once: true }}
@@ -26,6 +27,7 @@ const About = () => {
                   Отталкиваясь от этих ошибок, составил свою методическое пособие по ПДД.</p>
         </div>
         </motion.div>
+            </article>
   )
 }
 

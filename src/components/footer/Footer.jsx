@@ -8,6 +8,7 @@ import phone from '../../assets/icons/Phone (3).svg'
 
 const Footer = () => {
   return (
+    <footer>
     <div className={styles.footer}>
         <nav>
           <a href="/"><img src={instagram} alt="" /></a>
@@ -23,6 +24,7 @@ const Footer = () => {
           <a href="/" className={styles.phone}>0552 209 809</a>
         </nav>
     </div>
+    </footer>
   )
 }
 
