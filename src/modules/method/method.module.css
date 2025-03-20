@@ -121,3 +121,8 @@
         text-wrap: wrap;
     }
 }
+@media screen and (max-width: 300px) {
+    .card{
+        flex-wrap: wrap;
+    }
+}

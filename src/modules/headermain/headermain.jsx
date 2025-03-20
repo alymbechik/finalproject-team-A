@@ -3,11 +3,19 @@ import Header from '../../components/header/header'
 import Main from '../main/main'
 import styles from './headermain.module.css'
 
-const Header_Main = () => {
+const Header_Main = (props) => {
+  const {
+    toggleLanguage,
+    language    
+  } = props
+
   return (
     <section className={styles.main}>
-        <Header/>
-        <Main/>
+        <Header
+            toggleLanguage={toggleLanguage}
+            language={language}/>
+        <Main
+            language={language}/>
     </section>
   )
 }

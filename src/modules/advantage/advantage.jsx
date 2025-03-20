@@ -1,12 +1,13 @@
 import React from 'react'
-import { ADVANTAGES_DATA } from '../../constants/advantages'
+import { ADVANTAGES_DATA_ru, ADVANTAGES_DATA_en } from '../../constants/advantages'
 import Advantages from '../../components/advantages/advantages'
 import styles from './advantage.module.css'
 
-const Advantage = () => {
+const Advantage = ({ language }) => {
   return (
     <aside className={styles.flex}>
-      {ADVANTAGES_DATA.map((item, idx) => {
+      {language === 'ru' ? 
+      ADVANTAGES_DATA_ru.map((item, idx) => {
         return (
           <div key={idx}>
             <Advantages
@@ -15,7 +16,19 @@ const Advantage = () => {
             />
           </div>
         )
-      })}
+      })
+      :
+      ADVANTAGES_DATA_en.map((item, idx) => {
+        return (
+          <div key={idx}>
+            <Advantages
+              icon={item.icon}
+              title={item.title}
+            />
+          </div>
+        )
+      })
+      }
     </aside>
   )
 }

@@ -42,7 +42,6 @@
     }
     .title h4{
         font-size: 9px;
-        text-wrap: nowrap;
     }
     .info p{
         font-size: 10px;
@@ -60,5 +59,10 @@
     }
     .info{
         gap: 5px;
+    }
+}
+@media screen and (max-width: 360px){
+    .container{
+        flex-wrap: wrap;
     }
 }

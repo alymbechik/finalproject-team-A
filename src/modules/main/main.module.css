@@ -5,18 +5,20 @@
 }
 .up{
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    align-items: center;
     justify-content: space-between;
 }
-.up h1 {
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.title h1 {
     font-size: 48px;
-    width: 65%;
 }
 .car{
-    position: absolute;
-    top: 180px;
-    left: 48%;
+    position: relative;
+    right: 30px;
 }
 .text_btns{
     display: flex;
@@ -41,6 +43,7 @@
 .btns{
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 .btns button{
     background: #7DA658;
@@ -79,6 +82,7 @@
 .down{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .graph{
     display: flex;
@@ -111,6 +115,7 @@
     .main{
         color: white;
         gap: 50px;
+        margin-top: 10vh;
     }
     .car, .phone1, .time1{
         display: none;
@@ -119,6 +124,9 @@
         display: inline-block;
     }
     .text, .up, .time, .email{
+        gap: 5px;
+    }
+    .title{
         gap: 5px;
     }
     .up h1{

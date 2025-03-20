@@ -9,6 +9,9 @@
     font-weight: 700;
     text-align: center;
 }
+.error{
+    text-align: center;
+}
 @media screen and (max-width: 390px){
     .states h2{
         font-size: 21px;
